@@ -3,10 +3,11 @@ const mysql = require('mysql2');
 
 // Se crea la conexión a la base de datos
 const connection = mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
+    host: process.env.DB_HOST || 'mysql.railway.internal',
     user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || '',
+    password: process.env.DB_PASSWORD || 'VTtnluhOXUcbrzIMCeZMYlqOprijBBZc',
     database: process.env.DB_DATABASE || 'railway',
+    port: process.env.DB_PORT || '3306'
 });
 
 // Se conecta a la base de datos
