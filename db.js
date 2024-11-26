@@ -1,4 +1,4 @@
-// Se importa el módulo de mysql
+// Se importa el módulo de mysql2
 const mysql = require('mysql2');
 
 // Se crea la conexión a la base de datos
