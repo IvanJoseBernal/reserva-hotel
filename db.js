@@ -3,11 +3,11 @@ const mysql = require('mysql2');
 
 // Se crea la conexión a la base de datos
 const connection = mysql.createConnection({
-    host: 'junction.proxy.rlwy.net',
-    user: 'root',
-    password: 'VTtnluhOXUcbrzIMCeZMYlqOprijBBZc',
-    database: 'railway',
-    port: '16129'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
 });
 
 // Se conecta a la base de datos
